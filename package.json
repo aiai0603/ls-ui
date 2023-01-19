@@ -12,7 +12,9 @@
     "lint:fix": "eslint . --fix",
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier --write .",
-    "lint:css": "stylelint packages/components/src/**/*.less --fix"
+    "lint:css": "stylelint packages/components/src/**/*.less --fix",
+    "prepare": "husky install",
+    "postinstall": "npx husky install"
   },
   "keywords": [],
   "author": "",
