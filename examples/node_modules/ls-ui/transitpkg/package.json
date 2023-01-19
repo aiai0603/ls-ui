@@ -1,0 +1,17 @@
+{
+  "name": "ls-ui",
+  "version": "1.0.9",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "es",
+    "lib"
+  ],
+  "keywords": [
+    "ls-ui"
+  ],
+  "author": "zs",
+  "license": "MIT",
+  "description": "",
+  "typings": "lib/index.d.ts"
+}
