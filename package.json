@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "exm:dev": "pnpm run --filter ./examples dev",
+    "doc:dev": "pnpm run --filter ./docs docs:dev",
     "test": "pnpm run --filter ./packages/components test",
     "coverage": "pnpm run --filter ./packages/components coverage",
     "build": "gulp -f packages/components/script/build.ts",
@@ -27,6 +28,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@algolia/client-search": "^4.14.3",
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
     "@ls-ui/eslint-config": "workspace:^0.0.1",
@@ -51,6 +53,7 @@
     "husky": "^8.0.3",
     "less": "^4.1.3",
     "lint-staged": "^12.0.0",
+    "ls-ui": "workspace:^1.0.9",
     "postcss": "^8.4.21",
     "postcss-less": "^6.0.0",
     "prettier": "^2.8.3",
@@ -62,11 +65,11 @@
     "typescript": "^4.9.4",
     "vite": "^4.0.4",
     "vite-plugin-dts": "^1.7.1",
+    "vitepress": "1.0.0-alpha.40",
     "vitest": "^0.27.2",
     "vue": "^3.2.36"
   },
   "dependencies": {
-    "ls-ui": "workspace:^1.0.1",
     "rimraf": "^4.1.0"
   }
 }

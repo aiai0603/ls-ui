@@ -1,5 +1,5 @@
 {
-  "name": "lstdocs",
+  "name": "@ls-ui/docs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,5 +10,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ls-ui": "workspace:^1.0.9"
+  }
 }

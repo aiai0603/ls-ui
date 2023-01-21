@@ -1,11 +1,14 @@
+<template>
+  <button :class="styleClass" v-bind="attrs" @click="myClick()">
+    <slot />
+  </button>
+</template>
 <script lang="ts" setup>
   import './style/index.less';
   import { computed, useAttrs, defineEmits } from 'vue';
   import { buttonProps } from './types';
   const props = defineProps(buttonProps);
-  console.log(props);
   const attrs = useAttrs();
-  console.log(attrs);
 
   const emits = defineEmits(['click']);
 
@@ -23,8 +26,3 @@
     emits('click', 11);
   };
 </script>
-<template>
-  <button :class="styleClass" v-bind="attrs" @click="myClick()">
-    <slot />
-  </button>
-</template>
